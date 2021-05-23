@@ -1,6 +1,18 @@
+import React from 'react';
+
+import { Header } from './components/Header';
+import { About } from './components/About';
+import { Dist } from './components/Distribution';
+import { Part } from './components/Participation';
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Header />
+      <About />
+      <Dist />
+      <Part />
+    </>
   );
 }
 
