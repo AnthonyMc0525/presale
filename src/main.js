@@ -29,7 +29,7 @@ let stopInterval = setInterval(updateCountdown, 1000);
 
 function updateCountdown(){
 
-  let countDownDate = new Date("May 22, 2021 23:00:00").getTime();
+  let countDownDate = new Date("May 26, 2021 23:00:00").getTime();
 
   let x = setInterval(function() {
     let now = new Date().getTime();
@@ -37,9 +37,9 @@ function updateCountdown(){
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                                              
+
     document.getElementById("countdown").innerHTML = hours + ":"+ minutes + ":" + seconds + "";
-                                                              
+
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "EXPIRED";

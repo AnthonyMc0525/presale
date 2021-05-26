@@ -10,6 +10,9 @@ module.exports = {
       spacing: {
         '195': '19.5rem',
         '6/5': '120%',
+        'twenty' : '20%',
+        'ten' : '15%',
+        'eighty' : '80%',
       },
     },
   },
